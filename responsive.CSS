@@ -1,0 +1,111 @@
+<style>
+body{
+    margin: 0;
+    font-family: Arial,sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+     background: black;
+     color: white;
+}
+
+.nav link{
+    display: flex;
+    gap: 20px;
+}
+
+.nav link a{
+    color: white;
+    text-decoration: none;
+}
+
+/* HOME */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: lightblue;
+    text-align: center;
+}
+
+button{
+    background: lawngreen;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(122, 65, 65);
+}
+
+button:hover{
+    background: lavender;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.profile{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* ABOUT */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: rgb(14, 98, 126);
+    text-align: center;
+    color: white;
+}
+
+/* CONTACT */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: lightsalmon;
+    text-align: center;
+    color: white;
+}
+
+/* FORM */
+.form{
+    isplay: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: yrgb(185, 185, 105)
+    text-align: center;
+    color: white;
+}
+
+/* GRID */
+h2{
+    background: gold;
+    color: aliceblue;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width:600px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.box{
+    background: purple;
+    padding:40px ;
+    text-align: center;
+</style>

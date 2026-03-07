@@ -1,0 +1,123 @@
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background: black;
+        color: white;
+    }
+
+    .nav-links{
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+    }
+    .nav-links:hover{
+        background: lawngreen;
+        transition: 0.15s;
+    }
+
+    /* HERO */
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background: lightblue;
+        flex-direction: column;
+        text-align: center;
+
+        button{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px gray;
+        }
+
+        button:hover{
+            background-color: yellow;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        button:active{
+            background: plum;
+        }
+    }
+
+    /* SECTION */
+    .section{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width:600px)
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    span{
+        background: lavenderblush;
+       
+    }
+    /* PEN */
+    .pen{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+        background: yellowgreen;
+        position: static;
+
+        .box{
+            background: rgb(134, 82, 82);
+            padding: 40px;
+            border-radius: 10px;
+            margin-left: 15p;
+        }
+
+        #box{
+            background: bisque;
+            padding: 40px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+    }
+    
+    .chid{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    @media(max-width:600px){
+        .grid{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .box{
+        background: lightblue;
+        padding: 40px;
+        text-align: center;
+    }
+  </style>

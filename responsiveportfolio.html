@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Responsive Portfolio</title>
+        <link rel="stlesheet" href="responsive.CSS">
+
+        <style>
+body{
+    margin: 0;
+    font-family: Arial,sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+
+.nav-link{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link a{
+    color: white;
+    text-decoration: none;
+}
+
+/* HOME */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: lightblue;
+    text-align: center;
+    flex-direction: column;
+}
+
+button{
+    background: lawngreen;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(122, 65, 65);
+}
+
+button:hover{
+    background: lavender;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.profile{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* ABOUT */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: rgb(14, 98, 126);
+    text-align: center;
+    flex-direction: column;
+}
+
+/* CONTACT */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: lightsalmon;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* FORM */
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: lawngreen;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* GRID */
+h2{
+    background: gold;
+    color: aliceblue;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width:600px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.box{
+    background: purple;
+    padding:40px ;
+    text-align: center;
+}
+</style>
+    </head>
+
+
+    <body>
+
+        <div class="navbar">
+            <div>Felix Ogolla</div>
+            <div class="nav-link">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="home">
+            <h1>Welcome</h1>
+            <p>Hello, i am Felix.</p>
+            <p>I am a high school graduate.</p>
+            <p>I admire working with your company to help
+                improve the life of beings and solution of day to day encounters.
+            </p>
+            <button>For More</button>
+        </div>
+
+        <div class="about">
+            <h2>About Me</h2>
+            <p>I have also <strong>learned</strong><u> CSS,Javascript and GitHub</u></p>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <a href="https.youtube.com">Visit Youtube</a>
+            <img src="IMG_5315.JPG.jpeg" class="profile">
+        </div>
+
+        <div class="form">
+            <form>
+                <h2>Visit my Email </h2>
+                <label>Name</label>
+                <input type="text" value="Felix Ogolla">
+
+                <br><br>
+
+                <label>Email</label>
+                <input type="Email" value="Ogollafelix322@gmail.com">
+
+                <br><br>
+
+                <label>Password</label>
+                <input type="password">
+
+                <br><br>
+
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <div class="box">My Skills</div>
+
+        <br><br>
+        <div class="grid">
+            <
+            <div class="box">Computer Basics</div>
+            <div class="box">HTML Stucture</div>
+            <div class="box">CSS Basics</div>
+            <div class="box">Photoediting</div>
+        </div>
+<br><br>
+        @felix2026 
+
+
+    </body>
+</html>
