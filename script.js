@@ -163,3 +163,86 @@ function changeAll(){
     el.style.color="blue";
     el.style.fontSize="35px";
 }
+
+function checkAge(){
+    let age=document.getElementById("age").value;
+    if(age>=18){
+        document.getElementById("result").innerHTML="You are an adult";
+    }
+    else{
+        document.getElementById("result").innerHTML="You are under 18";
+    }
+}
+
+function getinput(){
+    let name=document.getElementById("username").value;
+    document.getElementById("output").innerHTML="Hello,Felix " +name
+}
+
+function addNumbers(){
+    let n1=document.getElementById("num1").value;
+    let n2=document.getElementById("num2").value;
+    let sum=Number(n1) + Number(n2);
+    document.getElementById("answer").innerHTML=sum;
+}
+
+function checkNumber(){
+    let num=document.getElementById("number").value;
+    if(num % 2==0){
+        document.getElementById("final").innerHTML="Even number";
+    }
+    else{
+        document.getElementById("final").innerHTML="Odd number";
+    }
+}
+
+function changeText(){
+    let text=document.getElementById("textinput").value;
+    document.getElementById("display").innerHTML=text;
+}
+
+function checkPassword(){
+    let pass=document.getElementById("password").value;
+    if(pass=="1234"){
+        document.getElementById("message").innerHTML="Access granted";
+    }
+    else{
+        document.getElementById("message").innerHTML="Wrong password";
+    }
+}
+
+function showColor(){
+    let color=document.getElementById("color").value;
+    document.getElementById("colorResult").innerHTML=color;
+}
+
+function add(){
+    let n1=Number(document.getElementById("num 1").value);
+    let n2=Number(document.getElementById("num 2").value);
+    document.getElementById("numberResult").innerHTML=n1+n2;
+}
+function subtract(){
+    let n1=Number(document.getElementById("num 1").value);
+    let n2=Number(document.getElementById("num 2").value);
+    document.getElementById("numberResult").innerHTML=n1-n2;
+}
+function multiply(){
+    let n1=Number(document.getElementById("num 1").value);
+    let n2=Number(document.getElementById("num 2").value);
+    document.getElementById("numberResult").innerHTML=n1*n2;
+}
+function divide(){
+    let n1=Number(document.getElementById("num 1").value);
+    let n2=Number(document.getElementById("num 2").value);
+    if(n1==0){
+        document.getElementById("numberResult").innerHTML="Cannot didide by zero";
+    }
+    else{
+        document.getElementById("numberResult").innerHTML=n1/n2;
+    }
+}
+function clearinput(){
+    document.getElementById("num 1").value="";
+    document.getElementById("num 2").value="";
+    document.getElementById("numberResult").innerHTML="";
+}
