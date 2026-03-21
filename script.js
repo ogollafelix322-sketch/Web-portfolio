@@ -219,7 +219,11 @@ function showColor(){
 function add(){
     let n1=Number(document.getElementById("num 1").value);
     let n2=Number(document.getElementById("num 2").value);
-    document.getElementById("numberResult").innerHTML=n1+n2;
+    document.getElementById("numberResult").innerHTML=n1+"+"+n2+"="+(n1+n2);
+    let history=document.getElementById("history");
+    let item=document.createElement("li");
+    item.innerHTML=n1+"+"+n2+"="+XPathResult;
+    history.appendChild(item);
 }
 function subtract(){
     let n1=Number(document.getElementById("num 1").value);
