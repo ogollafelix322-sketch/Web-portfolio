@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My To Do App</title>
+
+        <style>
+            body{
+                font-family: Arial;
+                background: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .container{
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                width: 300px;
+                box-shadow: 0 0 10px rgba(0 ,0, 0 ,0.1);
+            }
+            input{
+                width: 70%;
+                padding: 8px;
+            }
+            button{
+                padding: 8px;
+                margin-left: 5px;
+                cursor:pointer;
+            }
+            li{
+                margin:5px;
+                list-style: none;
+                padding: 8px;
+                background: #eee;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 5px;
+            }
+            .done{
+                text-decoration: line-through;
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>To-Do App</h1>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+        </div>
+        <script src="script3.js"></script>
+    </body>
+</html>
