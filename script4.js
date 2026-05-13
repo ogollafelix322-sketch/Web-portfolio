@@ -235,3 +235,132 @@ const arr=[1,2,3,4];
 const [fourth,...rest]=arr;
 console.log(fourth);
 console.log(rest);
+
+//Strings
+let text="hello world";
+console.log(text.toUpperCase());
+
+let word="Javascript";
+console.log(word.includes("script"));
+
+let see=" hello ";
+console.log(see.trim());
+
+let fruits="apples.banana.mango";
+console.log(fruits.split(","));
+
+let code="Hello World";
+console.log(code.replace("World","Felix"));
+
+//Promises
+const wait=new Promise((resolve)=>{
+    setTimeout(()=>{
+        resolve("Hello Felvine");
+    },3000);
+});
+wait.then(res=>console.log(res));
+
+function login(username,password){
+    return new Promise((resolve, reject) => {
+        if (username==="admin"&&password==="1234"){
+            resolve("Login seccussfully");
+        }else{
+            reject("Invalid username or password");
+        }
+    });
+}
+login("admin","password")
+.then(result=>{
+    console.log(result);
+})
+.catch(error=>{
+    console.log(error);
+});
+
+const p1=Promise.resolve(10);
+const p2=Promise.resolve(20);
+const p3=Promise.resolve(30);
+Promise.all([p1,p2,p3])
+.then(values=>console.log(values));
+
+fetch("https://jsonplaceholder.typicode.com/users/1")
+.then(res=>res.json())
+.then(user=>{
+    console.log(user.name);
+    return fetch("https://jsonplaceholder.typicode.com/posts/1");
+})
+.then(res=>res.json())
+.then(post=>{
+    console.log(post.title);
+})
+.catch(err=>console.log(err));
+
+//async/await function
+async function test(){
+    return "Hello Ogolla";
+}
+test().then(res=>console.log(res));
+
+function delay(){
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>resolve("Finished"),3000);
+    });
+}
+async function run () {
+    console.log("Start");
+    const result=await delay();
+    console.log(result);
+    console.log("End")
+}
+run();
+
+async function getWeather(){
+    try{
+        const res=await
+        fetch("https://api.open-meteo.com/v1/forecast?latitude=0&longitude=36&current-weather=true");
+        const data=await res.json();
+        console.log(data.current_weather.temperature);
+    }catch(error){
+        console.log("Error:",error);
+    }
+}
+getWeather();
+
+async function login(){
+    try{
+        const user=await Promise.resolve("Felix");
+        const pass=await Promise.resolve("1234");
+        if(user==="Felix"&& pass==="1234"){
+            console.log("Login success");
+        }else{
+            throw "Invalid login";
+        }
+    }catch(err){
+        console.log(err);
+    }
+}
+login();
+
+//Error Handling
+function checkNumber(number){
+    if(number<o){
+        throw new Error("Number not found");
+    }
+    return "Print Number";
+}
+try{
+    console.log(checkNum(2));
+}catch(error){
+    console.log(error.message);
+}
+
+async function getData() {
+    try{
+        const res=await
+        fetch("https://jsonplaceholder.typicode.com/users/1");
+        const data=await res.json();
+        console.log(data.name);
+    }catch(error){
+        console.log("Error:",error);
+    }
+}

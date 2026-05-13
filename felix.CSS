@@ -1,0 +1,76 @@
+p{
+    font-family: 'Lato',sans-serif;
+}
+li{
+    font-family: 'Lato',sans-serif;;
+}
+h1{
+    font-family: 'Roboto Condesed',sans-serif;
+    color: black;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+h2{
+    color: rgb(122, 122, 228);
+}
+h3{
+    color: rgb(243, 135, 135);
+}
+body{
+    background: lavender;
+}
+button{
+    background: plum;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: purple;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+img{
+    height: 250px;
+    width: 200px;
+    gap: 200px;
+    margin-top: 20px;
+    transition: 0.5 all;
+}
+img:hover{
+    height: 500px;
+    width: 300px;
+    border-radius: 50%;
+    transform: scale(1.05);
+}
+.button{
+    background: goldenrod;
+    border-radius: 5px;
+}
+.email{
+    background: rgb(233, 48, 110);
+    border-radius: 5px;
+}
+.password{
+    background: green;
+    border-radius: 5px;
+}
+#hello{
+    font-size: 40px;
+    color: #0077ff;
+    animation: fadeInDown 4s linear;
+}
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

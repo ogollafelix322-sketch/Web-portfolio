@@ -68,3 +68,23 @@ function editTask(index){
 //Run when page loads
 displayTasks();
 localStorage.clear();
+
+//Error Handling
+async function getData() {
+    try{
+        const res=await
+        fetch("https://jsonplaceholder.typicode.com/users/1");
+        const data=await res.json();
+        console.log(data.name);
+    }catch(error){
+        console.log("Error:",error);
+    }
+}
+
+try{
+    console.log("Try block");
+}catch(error){
+    console.log("Error");
+}finally{
+    console.log("Process complete");
+}
