@@ -59,7 +59,7 @@ img:hover{
     background: green;
     border-radius: 5px;
 }
-#hello{
+.hello{
     font-size: 40px;
     color: #0077ff;
     animation: fadeInDown 4s linear;
@@ -73,4 +73,39 @@ img:hover{
         opacity: 1;
         transform: translateY(0);
     }
+}
+#objectives{
+    animation: bounce 4s infinite alternate;
+}
+@keyframes bounce{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-30PX);
+    }
+}
+.welcome{
+    animation: colorChange 3s infinite;
+}
+@keyframes colorChange{
+    0%{
+        color: blueviolet;
+    }
+    50%{
+        color: palevioletred;
+    }
+    100%{
+        color: green;
+    }
+}
+.projects{
+    animation: shake 2s;
+}
+@keyframes shake{
+    0%{transform: translate(0);}
+    25%{transform: translate(-5px);}
+    50%{transform: translate(5px);}
+    75%{transform: translate(-5px);}
+    100%{transform: translate(0);}
 }
