@@ -7,9 +7,10 @@
     <body>
         <h1 id="objectives">Felix Webpage</h1>
         <h2 class="welcome">Welcome</h2>
-        <p>This my personal program on my journey to learning
+        <p id="para">This my personal program on my journey to learning
             HTML.
         </p>
+        <button onclick="changePara()">Change Text</button>
         <div>
         <h2 class="hello">My Objectives</h2>
         <p>Learn the following every two hours a day:</p>
@@ -48,7 +49,8 @@
 
         <br><br>
 
-        <h3>Table</h3>
+        <h3 id="Heading">Table</h3>
+        <button onclick="changeHeading()">Click Here</button>
         <table border="1">
             <caption>Student Performance</caption>
             <thead>
@@ -88,17 +90,22 @@
 
         <h3>Forms</h3>
         <div>
-        <form>
+        <form >
             <label>Name</label>
             <input type="text" placeholder="Enter your name" class="button">
             <br><br>
+            <label>Text</label>
+            <input type="text" onchange="valueChanged()" class="text">
+            <br><br>
             <label>Email</label>
-            <input type="Email" placeholder="Please type your email" class="email">
+            <input type="Email"placehold="Please type your email" class="email">
+            
             <br><br>
             <label>Password</label>
             <input type="password" placeholder="Fill your password" class="password">
             <br><br>
-            <button>Submit</button>
+            <button id="btn" onclick="changeBtn()">Submit</button>
+            <button onclick="showMessage()">Click Me</button>
         </form>
          </div>
 
@@ -111,9 +118,46 @@
         <img src="download (48).jpg" class="grid">
         <img src="cab9198c-b64a-4b32-9652-892cbea0cc4a.jpg" class="grid">
         </div>
-        <h3>For More</h3>
-        <p>Visit the links below</p>
+        <h3 onmouseover="removeMouse()">For More</h3>
+        <p id="put">Visit the links below</p>
+        <button onclick="showDetails()">Click to apply change</button>
+        <br><br>
         <a href="https:Youtube.com">Go  to youtube</a>
         <a href="https:Google.com" target="_blank">Go to google</a>
-    </body>
-</html>
+        <body onload="pageLoaded()"></body>
+        <hr>
+        <input type="text" id="name" placeholder="Type Your Name">
+        <button onclick="showMsg()">Name</button>
+        <p id="output"></p>
+        <br><br>
+        <input type="number" id="num1" placeholder="Enter First Number">
+        <input type="number" id="num2" placeholder="Enter Second Number">
+        <button onclick="addNumbers()">Add</button>
+        <p id="result"></p>
+        <br><br>
+        <input type="number" id="number" placeholder="Emter a number">
+        <button onclick="checkNumber()">Check</button>
+        <p id="display"></p>
+        <br><br>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Log In</button>
+        <p id="message"></p>
+        <br><br>
+        <select name="color" id="color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <button onclick="showColor()">Color</button>
+        <p id="colorResult"></p>
+        <br><br>
+        <h3>Simple Calculator</h3>
+        <input type="number" id="nu1" placeholder="Enter first number">
+        <input type="number" id="nu2" placeholder="Enter second number">
+        <button onclick="add()">Add</button>
+        <p id="final"></p>
+        
+        <script src="script6.js"></script>
+        </body>
+        </html>
+        

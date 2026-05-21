@@ -59,6 +59,10 @@ img:hover{
     background: green;
     border-radius: 5px;
 }
+.text{
+    background:khaki;
+    border-radius: 5px;
+}
 .hello{
     font-size: 40px;
     color: #0077ff;
